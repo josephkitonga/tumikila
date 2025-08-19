@@ -303,6 +303,65 @@
             padding: 3rem 0 1rem;
         }
 
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-brand img {
+            height: 60px;
+            margin-right: 1rem;
+        }
+
+        .footer-brand h5 {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-social a {
+            color: white;
+            font-size: 1.25rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            opacity: 0.8;
+        }
+
+        .footer-section h6 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a,
+        .footer-section ul li span {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: white;
+        }
+
         .btn-primary {
             background: var(--secondary-color);
             border: none;
@@ -348,8 +407,8 @@
             }
 
             .hero-text {
-                text-align: center;
-                margin-bottom: 2rem;
+                text-align: left;
+                margin-bottom: 1rem;
             }
 
             .hero-illustration {
@@ -362,8 +421,8 @@
             }
 
             .about-content {
-                text-align: center;
-                margin-bottom: 2rem;
+                text-align: left;
+                margin-bottom: 1rem;
             }
 
             .about-illustration {
@@ -378,6 +437,57 @@
             .vision-illustration img {
                 max-width: 300px;
                 max-height: 250px;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .hero-section {
+                padding: 60px 0;
+            }
+
+            .hero-text {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .about-content {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .vision-content {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .footer {
+                padding: 2rem 0 1rem;
+            }
+
+            .footer-brand {
+                justify-content: center;
+                text-align: center;
+                flex-direction: column;
+                margin-bottom: 2rem;
+            }
+
+            .footer-brand img {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            .footer-social {
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
+
+            .footer-section {
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+
+            .footer-section:last-child {
+                margin-bottom: 0;
             }
         }
     </style>
@@ -421,7 +531,7 @@
     <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6 hero-content">
+                <div class="col-lg-6 col-md-6 hero-content">
                     <div class="hero-text">
                         <!-- <p class="hero-subtitle text-white-50 mb-3">WHAT BUSINESS ARE YOU?</p> -->
                         <h1 class="display-3 fw-bold mb-4"><?php echo $company_name; ?></h1>
@@ -434,7 +544,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="hero-illustration">
                         <img src="assets/undraw_private-data_7v0o.svg" alt="Data Privacy Illustration" class="w-100 h-auto">
                     </div>
@@ -463,24 +573,24 @@
     <section id="about" class="about-section section-padding">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="about-content">
                         <h2 class="section-title mb-4">About Us</h2>
                         <p class="about-subtitle mb-4">Who We Are</p>
                         <p class="about-description mb-4">
-                            Tumikila Talents Solutions is a dynamic HR agency based in Lusaka, Zambia, specializing in 
-                            talent outsourcing and comprehensive employee management services. We partner with 
-                            businesses to provide skilled and reliable personnel, while handling all employee-related 
+                            Tumikila Talents Solutions is a dynamic HR agency based in Lusaka, Zambia, specializing in
+                            talent outsourcing and comprehensive employee management services. We partner with
+                            businesses to provide skilled and reliable personnel, while handling all employee-related
                             matters—from recruitment and onboarding to performance management and compliance.
                         </p>
                         <p class="about-description">
-                            With a focus on efficiency, integrity, and professionalism, we help companies reduce their 
+                            With a focus on efficiency, integrity, and professionalism, we help companies reduce their
                             HR burden so they can focus on what they do best—growing their business.
                         </p>
                         <!-- <p class="about-credit mt-4">Images from: <a href="https://undraw.co" target="_blank" class="text-decoration-none">undraw.co</a></p> -->
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <div class="about-illustration">
                         <img src="assets/undraw_team-spirit_18vw.svg" alt="Team Spirit Illustration" class="w-100 h-auto">
                     </div>
@@ -537,7 +647,7 @@
         </div>
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-1 order-2">
+                <div class="col-lg-6 col-md-6 order-lg-1 order-2">
                     <div class="vision-content">
                         <h2 class="section-title text-white mb-4">Our Vision</h2>
                         <div class="card bg-transparent border-light">
@@ -550,7 +660,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0">
+                <div class="col-lg-6 col-md-6 order-lg-2 order-1 mb-4 mb-lg-0">
                     <div class="vision-illustration text-center">
                         <img src="<?php echo base_url('assets/undraw_connected-world_anke.svg'); ?>" alt="Connected World" class="img-fluid">
                     </div>
@@ -603,44 +713,48 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="d-flex align-items-center mb-3">
-                        <img src="<?php echo base_url('logos.png'); ?>" alt="<?php echo $company_name; ?>" height="60" class="me-3">
-                        <h5 class="mb-0"><?php echo $company_name; ?></h5>
+                <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+                    <div class="footer-brand">
+                        <img src="<?php echo base_url('logos.png'); ?>" alt="<?php echo $company_name; ?>">
+                        <h5><?php echo $company_name; ?></h5>
                     </div>
                     <p class="mb-3">Your trusted partner for HR and talent outsourcing solutions in Zambia.</p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white"><i class="fab fa-facebook fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-twitter fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <h6 class="mb-3">Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="#home" class="text-white-50">Home</a></li>
-                        <li><a href="#about" class="text-white-50">About</a></li>
-                        <li><a href="#services" class="text-white-50">Services</a></li>
-                        <li><a href="#vision" class="text-white-50">Vision</a></li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-section">
+                        <h6>Quick Links</h6>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#vision">Vision</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-lg-3">
-                    <h6 class="mb-3">Services</h6>
-                    <ul class="list-unstyled">
-                        <li><span class="text-white-50">Employee Outsourcing</span></li>
-                        <li><span class="text-white-50">Recruitment</span></li>
-                        <li><span class="text-white-50">HR Administration</span></li>
-                        <li><span class="text-white-50">Compliance</span></li>
-                    </ul>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <div class="footer-section">
+                        <h6>Services</h6>
+                        <ul>
+                            <li><span>Employee Outsourcing</span></li>
+                            <li><span>Recruitment</span></li>
+                            <li><span>HR Administration</span></li>
+                            <li><span>Compliance</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <hr class="my-4">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 text-center text-md-start">
                     <p class="mb-0">&copy; <?php echo date('Y'); ?> <?php echo $company_name; ?>. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-md-end">
+                <div class="col-md-6 text-center text-md-end">
                     <!-- <p class="mb-0">Built with <i class="fas fa-heart text-danger"></i> using CodeIgniter & Bootstrap</p> -->
                 </div>
             </div>
