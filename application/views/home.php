@@ -7,7 +7,7 @@
     <title><?php echo $title; ?></title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="<?php echo base_url('logo.png'); ?>">
+    <link rel="icon" type="image/png" href="<?php echo base_url('logos.png'); ?>">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -388,7 +388,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="<?php echo base_url('logo.png'); ?>" alt="<?php echo $company_name; ?>" height="65" class="me-2">
+                <img src="<?php echo base_url('logos.png'); ?>" alt="<?php echo $company_name; ?>" height="65" class="me-2">
                 <?php // echo $company_name; 
                 ?>
             </a>
@@ -605,7 +605,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="d-flex align-items-center mb-3">
-                        <img src="<?php echo base_url('logo.png'); ?>" alt="<?php echo $company_name; ?>" height="60" class="me-3">
+                        <img src="<?php echo base_url('logos.png'); ?>" alt="<?php echo $company_name; ?>" height="60" class="me-3">
                         <h5 class="mb-0"><?php echo $company_name; ?></h5>
                     </div>
                     <p class="mb-3">Your trusted partner for HR and talent outsourcing solutions in Zambia.</p>
