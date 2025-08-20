@@ -499,7 +499,7 @@
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="<?php echo base_url('logos.png'); ?>" alt="<?php echo $company_name; ?>" height="65" class="me-2">
-              
+
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -612,6 +612,16 @@
                     'fas fa-gavel',
                     'fas fa-chart-line'
                 ];
+
+                $service_descriptions = [
+                    'Employee Outsourcing' => 'Comprehensive workforce solutions where we handle all aspects of employee management, from recruitment to payroll, allowing you to focus on your core business operations.',
+                    'Recruitment' => 'Strategic talent acquisition services including job posting, candidate screening, interviews, and placement to find the perfect fit for your organization.',
+                    'Payroll Management' => 'Complete payroll processing including salary calculations, tax deductions, benefits administration, and compliance with local labor laws and regulations.',
+                    'HR Consulting' => 'Expert guidance on HR policies, employee relations, performance management, and organizational development to optimize your workforce.',
+                    'Legal Compliance' => 'Ensuring your business adheres to all labor laws, employment regulations, and industry standards to minimize legal risks and maintain compliance.',
+                    'Performance Management' => 'Systematic approach to employee development including goal setting, performance reviews, feedback systems, and career progression planning.'
+                ];
+
                 foreach ($services as $index => $service): ?>
                     <div class="col-lg-4 col-md-6 mb-4">
                         <div class="service-card">
@@ -619,7 +629,7 @@
                                 <i class="<?php echo $service_icons[$index]; ?>"></i>
                             </div>
                             <h5 class="mb-3"><?php echo $service; ?></h5>
-                            <p style="color: var(--text-muted);">Professional and reliable <?php echo strtolower($service); ?> services tailored to your business needs.</p>
+                            <p style="color: var(--text-muted);"><?php echo $service_descriptions[$service]; ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>
