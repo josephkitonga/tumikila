@@ -615,11 +615,11 @@
 
                 $service_descriptions = [
                     'Employee Outsourcing' => 'Comprehensive workforce solutions where we handle all aspects of employee management, from recruitment to payroll, allowing you to focus on your core business operations.',
-                    'Recruitment' => 'Strategic talent acquisition services including job posting, candidate screening, interviews, and placement to find the perfect fit for your organization.',
-                    'Payroll Management' => 'Complete payroll processing including salary calculations, tax deductions, benefits administration, and compliance with local labor laws and regulations.',
-                    'HR Consulting' => 'Expert guidance on HR policies, employee relations, performance management, and organizational development to optimize your workforce.',
-                    'Legal Compliance' => 'Ensuring your business adheres to all labor laws, employment regulations, and industry standards to minimize legal risks and maintain compliance.',
-                    'Performance Management' => 'Systematic approach to employee development including goal setting, performance reviews, feedback systems, and career progression planning.'
+                    'Recruitment & Talent Acquisition' => 'Strategic talent acquisition services including job posting, candidate screening, interviews, and placement to find the perfect fit for your organization.',
+                    'HR Administration & Payroll' => 'Complete HR administration and payroll processing including salary calculations, tax deductions, benefits administration, and compliance with local labor laws and regulations.',
+                    'Employee Relations Management' => 'Expert guidance on employee relations, conflict resolution, workplace culture, and fostering positive work environments to enhance productivity and retention.',
+                    'Compliance with Labor Laws' => 'Ensuring your business adheres to all labor laws, employment regulations, and industry standards to minimize legal risks and maintain compliance.',
+                    'Performance Monitoring & Reporting' => 'Systematic approach to employee performance tracking, regular assessments, detailed reporting, and data-driven insights for informed decision-making.'
                 ];
 
                 foreach ($services as $index => $service): ?>
